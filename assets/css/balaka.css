@@ -1,0 +1,90 @@
+/* =========================================================
+   Balaka Beef — sub-brand overrides (black + gold, per the
+   Balaka Beef Brand Guideline). Scoped to .balaka-theme so the
+   rest of the Demeter Farm site keeps its own green identity;
+   only this page's content area opts in.
+   ========================================================= */
+
+.balaka-theme {
+  --bb-black: #1B1B1B;
+  --bb-black-soft: #2B2B2B;
+  --bb-gold: #AE8A4C;
+  --bb-gold-light: #D9BE8C;
+  --bb-cream: #F6F2E9;
+}
+
+.balaka-theme .eyebrow { color: var(--bb-gold); }
+.balaka-theme .section--tint { background: var(--bb-cream); }
+.balaka-theme h2, .balaka-theme h3 { color: var(--bb-black); }
+
+.balaka-theme .btn-primary { background: var(--bb-black); color: var(--white); }
+.balaka-theme .btn-primary:hover { background: var(--bb-black-soft); }
+.balaka-theme .btn-ghost { color: var(--bb-black); }
+.balaka-theme .btn-ghost:hover { background: var(--bb-cream); color: var(--bb-black); }
+
+.balaka-theme .card-icon { background: var(--bb-cream); color: var(--bb-gold); }
+.balaka-theme .check-list svg { color: var(--bb-gold); }
+.balaka-theme .stat-num { color: var(--bb-black); font-family: "Oswald", var(--font-display); }
+.balaka-theme .team-role { color: var(--bb-gold); }
+.balaka-theme .avatar { background: var(--bb-black); font-family: "Oswald", var(--font-display); }
+.balaka-theme .team-name { color: var(--bb-black); }
+.balaka-theme .timeline-item::before { background: var(--bb-gold); }
+.balaka-theme a { color: var(--bb-black); text-decoration-color: rgba(174, 138, 76, 0.5); }
+.balaka-theme a:hover { color: var(--bb-gold); }
+
+/* ---------- Balaka hero: bold wordmark lockup, black + gold ---------- */
+.balaka-hero {
+  position: relative;
+  background: var(--bb-black);
+  color: var(--white);
+  overflow: hidden;
+}
+.balaka-hero-pattern {
+  position: absolute;
+  inset: 0;
+  opacity: 0.06;
+  background-image: repeating-linear-gradient(45deg, var(--white) 0 2px, transparent 2px 26px);
+  pointer-events: none;
+}
+.balaka-hero-inner { position: relative; padding-block: clamp(3rem, 7vw, 5rem); }
+
+.balaka-wordmark {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  margin-bottom: 1.6rem;
+}
+.balaka-wordmark svg { width: 2.6rem; height: 2.6rem; color: var(--bb-gold); flex: none; }
+.balaka-wordmark-text {
+  font-family: "Oswald", var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.9rem, 4.2vw, 2.9rem);
+  letter-spacing: 0.01em;
+  color: var(--white);
+  text-transform: uppercase;
+  line-height: 1;
+}
+.balaka-tagline {
+  font-family: "Oswald", var(--font-display);
+  font-weight: 500;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--bb-gold);
+  font-size: 0.85rem;
+  margin: 0.4rem 0 0 0.1rem;
+}
+
+.balaka-hero h1 { color: var(--white); font-family: var(--font-display); max-width: 44rem; }
+.balaka-hero p { color: rgba(255,255,255,0.8); max-width: 42rem; font-size: 1.05rem; }
+.balaka-hero .eyebrow { color: var(--bb-gold); }
+
+.balaka-parent-note {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  margin-top: 1.6rem;
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.6);
+}
+.balaka-parent-note a { color: rgba(255,255,255,0.85); }
+.balaka-parent-note a:hover { color: var(--bb-gold-light); }
